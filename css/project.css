@@ -1,0 +1,97 @@
+.box-image {   
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.project {height: 700px;}
+.kluis .box-image{      background-image: url("../afbeeldingen/achtergrond_kluis.jpeg");}
+.simonsays .box-image{  background-image: url("../afbeeldingen/achtergrond_simonsays.jpeg");}
+.ledcube .box-image{    background-image: url("../afbeeldingen/achtergrond_ledcube.jpeg");}
+.lift .box-image{       background-image: url("../afbeeldingen/achtergrond_lift.jpeg");}
+.dtx .box-image{        background-image: url("../afbeeldingen/achtergrond_dtx.jpeg");}
+.robotrun .box-image{   background-image: url("../afbeeldingen/achtergrond_robotrun.jpeg");}
+
+
+.header-project {
+    height: 100px;
+    padding: 20px;
+    font: bold 30px arial;
+    color: white;
+}
+
+.titel {
+    float: left;
+    width: 100px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.cijfer {
+    width: 100px;
+    float: right;  
+    text-shadow: 2px 2px 2px black; 
+}
+
+
+.flex-box {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+}
+
+.box-info {
+    height: 300px;
+    width: 250px;
+    margin: 100px 15px;
+    flex: 25%;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: rgb(73, 73, 73);
+}
+
+.box-info header{
+    font: bold 20px arial;
+    color: rgb(142, 156, 223);
+}
+
+.box-info article {
+    padding: 10px 20px;
+}
+
+.beschr, .eisen, .groep {
+    padding: 10px;
+}
+
+.groep {
+    text-align: center;
+    font: bold 40px arial;
+}
+
+.icon {
+    font-size: 200px;
+}
+
+@media screen and (max-width: 900px){
+    .project {height: 900px;}
+    .flex-box {
+        flex-flow: row wrap-reverse;
+    }
+    
+    .box-info{
+        flex: 40%;
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .project {height: 1200px;}
+
+    .box-info{
+        flex: 95%;
+        margin: 10px 10px;
+    }
+}
+

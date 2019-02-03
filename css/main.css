@@ -1,0 +1,22 @@
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: "helvetica neue", sans-serif;
+    background-color: white;
+}
+
+body {
+    background-color: #ffffff;
+    user-select: none; /* Kan de text niet selecteren */
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+article{
+    user-select: text; /* Kan de text wel selecteren */
+}

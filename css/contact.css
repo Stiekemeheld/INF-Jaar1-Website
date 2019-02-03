@@ -1,0 +1,192 @@
+body{
+   
+    background-image: url(../afbeeldingen/achtergrond2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: auto;
+    margin: 0px;
+    position: relative;
+}
+
+.box-image {
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, input[type=number], input[type=textarea] {
+    width: 25%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 0px solid black; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=textarea] {
+    width: 100%;
+}
+
+button {
+    background-color: none;
+    border-width: 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.submissionform {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 70px auto;
+    padding: 0px;
+    width: 800px;
+    max-width: 90%;
+}
+
+.submissionform header, .submissionform footer,button{
+    flex: 100%;
+    background-color: rgb(89, 136, 189);
+    text-align: center;
+    color: white;
+    font: bold 20px arial;
+    padding: 10px;
+}
+
+
+
+.submissionform {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* Add a background color and some padding around the form */
+.submissionbox1, .submissionbox2, .submissionbox1{
+    margin-left: 0px;
+    width:40%;
+    padding: 5px;
+    flex: 40%;
+}
+
+.submissionbox3 {/*Dit is vraagding*/
+    border-top: solid 1px rgb(89, 136, 189);
+    margin: 5px auto;
+    width: 500px;
+}
+
+.icon {
+    padding: 10px;
+    color: rgb(89, 136, 189);
+    width: 50px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 950px) { /*dit is tablet*/
+
+           .submissionbox1, .submissionbox2, .submissionbox3{
+            width: 100%;
+            flex:90%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 700px) {/*dit is mobiel*/
+       body{
+        background-image: none;
+       } 
+
+       input[type=text], select, input[type=number], input[type=textarea] {
+        width: 100%; /* Full width */
+        flex:90%;
+       }
+    }
+
+/*input[type=text], select, textarea {
+    width: 15%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/*
+.box-form{
+    display: flex;
+    flex-flow: column wrap;
+    float: left;
+    color: white;
+    min-width: 80%;
+    margin: 50px 100px;
+    background-color: purple;
+}
+
+@media screen and (max-width: 650px) {
+.box-form{
+    margin: 5px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.box-form div{
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column;
+    margin: 20px auto;    
+}
+
+}
+*/

@@ -1,0 +1,100 @@
+.box{
+    margin: 0px;
+    width: 100%;  
+}
+
+.main {    
+    background-color: rgb(79, 93, 105);
+    display: block;
+}
+
+.second {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+
+.image-box {
+    height: 50%;
+    background-image: url("../afbeeldingen/indexgif.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 30px arial;
+    color: white;
+    text-shadow: 2px 2px 2px black; 
+}
+
+img {
+    margin: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.informatie  {
+    margin: 20px 20px 20px 100px;
+    width: 700px;
+    max-width: 100%;
+}
+
+.informatie header{
+    font: bold 20px arial;
+    color: rgb(142, 156, 223);
+}
+
+@media screen and (max-width: 900px){
+    .logo {
+        margin: 10px auto; 
+    }
+    
+    img {
+        width: 80%;
+    }
+
+    .informatie {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    .text-box {
+        position: absolute;
+        text-align: center;
+        font: 30px arial;
+        color: white;
+        padding: 5px;
+        margin: 0px;
+        width: 90%;
+    }
+
+    .second {
+        flex-flow: column-reverse;
+    }
+
+    .logo {
+        margin: 10px auto; 
+    }
+    
+    img {
+        width: 80%;
+    }
+
+    .informatie {
+        margin: 20px auto;
+        width: 90%;
+    }
+}

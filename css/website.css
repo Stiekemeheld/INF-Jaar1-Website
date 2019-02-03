@@ -1,0 +1,17 @@
+.main-box {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.mobile {
+  height: 800px;
+  width: 300px;
+}
+
+.tablet{
+
+  height:800px;
+  width: 900px;
+}

@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(15, 153, 50);
+    margin: 0px;
+    padding: 0px;
+}
+
+.blok {
+    display: flex;
+    height: 90%;
+    flex-flow: row wrap;    
+    background-color: rgb(103, 187, 255);
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.blok1, .blok3 {background-color: rgb(255, 255, 255);}
+.blok2, .blok4 {background-color: rgb(199, 235, 255);}
+
+.bloknummer {
+    height: 100%;
+    width: 350px;
+    position: absolute;
+    font: bold 100px arial;
+    color: rgb(124, 170, 255);
+    text-align: center;
+
+}
+
+.box-informatie {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.informatie{
+    padding: 5px;
+    margin: 0px 10px 10px 350px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    flex: 70%;
+}
+
+.informatie header {
+    font: bold 20px arial;
+    color: rgb(124, 170, 255);
+}
+
+
+.table  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width:30%;
+}
+.table td{
+    
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+.table .row1{
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+.table .row2{
+    text-align:left;
+    vertical-align:top
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .blok {
+        flex: column;
+        height: auto;
+    }
+
+    .box-informatie {
+        margin: 0px;
+        height: auto;
+    }
+    .table{
+        width: 50%;
+    }
+
+    .bloknummer {
+        height: 40px;
+        text-align: left;
+        width: 90%;
+        font-size: 40px;
+        position: relative;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .informatie{
+        flex: 100%;
+        margin: 5px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .blok {
+        flex: column;
+        height: auto;
+    }
+    .table{
+        width:100%;
+    }
+    .box-informatie {
+        margin: 0px;
+        height: auto;
+    }
+
+
+    .bloknummer {
+        height: 40px;
+        text-align: left;
+        width: 90%;
+        font-size: 40px;
+        position: relative;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .informatie{
+        flex: 100%;
+        margin: 0px;
+        padding: 20px 5px;
+        box-shadow: none;
+        background-color: rgba(128, 128, 128, 0);
+
+    }
+}

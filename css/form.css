@@ -1,0 +1,56 @@
+/**
+input, select, option, button {
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    font:  20px "helvitica neue", arial;
+    color: white;
+    border-width: 0px;
+    border-bottom: 1px solid white;
+    margin: 10px;
+}
+
+input[name="naam-tussenvoegsel"]{
+    width: 100px;
+}
+
+button[type="submit"]{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 250px;
+}
+
+button[type="submit"]:hover{
+    border: 1px solid transparent;
+    background-color: white;
+    color: green;
+}
+
+
+
+input[name="geslacht-toelichting"]{
+    display: none;
+}
+
+select[value="geslacht-anders"]:checked ~ input[value="geslacht-toelichting"]{
+    display: block;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+    width: 50px;
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 700px) {
+    .icon {
+        color: white;
+        background-color: gray;
+        width: 100%;
+        text-align: left;
+      }
+
+}
+*/

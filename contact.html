@@ -1,0 +1,120 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact pagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  
+</head>
+<body>
+
+        <div class="nav">
+                <label for="toggle-menu">&#9776</label>
+                <input type="checkbox" id="toggle-menu">
+        
+                <div class="menu">
+                <a href="index.html">Home</a>                   <!-- home -->  
+                <div class="dropdown">                                       <!-- blok -->
+                    <input type="checkbox" id="toggle-blok">  
+                        <a href="blok.html">Blokken 
+                    <label for="toggle-blok">
+                        <div target="plus" class="plus">+</div>
+                        <div target="min" class="min">-</div>
+                    </label></a>      
+                    <div class="dropdown-content">
+                        <a href="blok.html#blok1">Blok 1</a>
+                        <a href="blok.html#blok2">Blok 2</a>
+                        <a href="blok.html#blok3">Blok 3</a>
+                        <a href="blok.html#blok4">Blok 4</a>
+                    </div>  
+                </div>
+        
+                <div class="dropdown">                              <!--project-->
+                    <input type="checkbox" id="toggle-project">  
+                    <a href="project.html">Projecten   
+                    <label for="toggle-project">
+                        <div class="plus">+</div>
+                        <div class="min">-</div>
+                    </label>
+                    </a>
+                              
+                    <div class="dropdown-content">
+                                    <a href="project.html#kluis">Kluis</a>
+                                    <a href="project.html#simonsays">Simonsays</a>
+                                    <a href="project.html#ledcube">Ledcube</a>
+                                    <a href="project.html#lift">Lift</a>
+                                    <a href="project.html#dtx">DTX</a>
+                                    <a href="project.html#robotrun">RobotRun</a>
+                        </div>  
+                    </div>
+                    <a href="methoden.html">Methoden</a>                            <!--project-->
+                    <a href="website.html">Website</a>                              <!--project-->
+                    <a href="overons.html">Over ons</a>                             <!--project-->
+                    <a class="active" href="contact.html">Contact</a>                              <!--project-->
+                </div>
+        </div>
+
+        <form class="submissionform">
+            <header>Contact</header>
+            <div class="submissionbox1">
+
+                <div class="infoboxrow1">
+                    
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="voornaam" placeholder="Voornaam">
+                    <input type="text" name="naam-tussenvoegsel" placeholder="Tussenvoegsel">
+                    <input type="text" name="achternaam" placeholder="Achternaam">
+                </div>
+
+                <div class="infobox1row2">
+                    <i class="fa fa-envelope icon"></i>
+                    <input id="email" type="text" name="E-mail" placeholder="E-mail">
+                </div>
+                <div class="infobox1row3">
+                        <i class="fa fa-phone icon"></i>
+                        <input type="number" name="telefoonnummer" placeholder="Telefoonnummer">
+                </div>
+
+                
+            </div>
+
+            <div class="submissionbox2">
+                    <div class="infobox1row1">
+                            <i class="fa fa-male icon"></i>
+                            <select class="selectlist">
+                                <option value="Man">Man</option>
+                                <option value="Vrouw">Vrouw</option>
+                                <option value="Anders">Anders:</option>
+                            </select>
+                            <input type="text" name="geslacht" placeholder="Anders">
+                        </div>
+                <div class="infobox2row2">
+                    <i class="fa fa-home icon"></i>
+                    <input type="text" name="straat" placeholder="Straatnaam">
+                    <input type="number" name="huisnummer" placeholder="Huisnummer">
+                    <input type="text" name="toevoeging" placeholder="Toevoeging">                
+                </div>
+                <div class="infobox2row3">
+                    <i class="fa fa-home icon"></i>
+                    <input type="text" name="postcode" placeholder="Postcode">
+                    <input type="text" name="Plaats" placeholder="Plaatsnaam">
+                </div>
+            </div>
+
+            <div class="submissionbox3">
+                <input type="textarea" name="Vraag" placeholder="Wat is uw vraag?">
+                
+            </div>
+            <footer><button class="submitbutton"><span>Verzenden</span></button></footer> 
+        </form>
+    </body>
+    </html>
